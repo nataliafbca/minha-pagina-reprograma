@@ -1,0 +1,181 @@
+html {
+    background: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Recursive', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1080px;
+    text-align: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 1em;
+    padding-bottom: 3em;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 3rem;
+}
+
+.btn-white {
+    background-color: white;
+    color: #7c4686;
+    font-size: 1rem;
+}
+
+.btn-purple {
+    background: #7c4686;
+    color: white;
+    border: 1px solid #7c4686;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.banner {
+    background: url(../img/nataliacastro.jpeg) center no-repeat;
+    background-size: cover;
+    height: 90vh;
+    color: #7c4686;
+    text-align: center;
+    padding-top: 20rem;
+}
+
+.banner-title {
+    font-size: 3rem;
+}
+
+.banner-subtitle {
+    font-size: 2rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.about-container {
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding-bottom: 3rem;
+} 
+
+.about-title {
+    font-size: 1.7rem;
+    color: #7c4686;
+    width: 100%;
+}
+
+.about-description {
+    width: 46.5%;
+    display: inline-block;
+}
+
+.about-ability {
+    width: 39%;
+    display: inline-block;
+    margin-right: 5%;
+}
+
+/* Redes Sociais */
+.footer {
+    text-align: center;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.social-networks_link {
+    width: 10%;
+    background-color: #7c4686;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 8px;
+    margin-top: 1rem;
+    min-width: 8rem;
+}
+
+.social-networks_img {
+    margin-bottom: 1rem;
+}
+
+.social-networks_titulo {
+    font-size:1.6rem;  
+    margin-bottom: 1rem; 
+}
+
+.footer-copyright {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 6px; 
+}
+
+.about-ability__list {
+    padding-inline-start: 20px;
+}
+
+a.social-networks_link p {
+    margin-bottom: 0;
+}
+
+/* Media Queries */
+/* Tablet paisagem */
+@media  (max-width:1024px){
+    .container {
+        max-width: 960px;
+    } 
+    .banner {
+        padding-top: 10rem;
+    }
+}
+
+/* Tablet paisagem / Celular */
+@media (max-width:768px){
+    .about-flex {
+        display: block;
+    }
+    
+    .about-description, .about-ability {
+        width:100%;
+    }
+}
+
+@media (max-width: 425px){
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-subtitle {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+}
